@@ -9,7 +9,7 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark light">
-<title>Hi, Tahlia! | Clever Admin Dashboard Template</title>
+<title>Meta</title>
 <!-- Bootstrap Icons -->
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
@@ -20,9 +20,22 @@
 <script src="resources/js/jquery-3.6.0.min.js"></script>
 <script src="resources/js/bootstrap.bundle.min.js"></script>
 
+<style>
+.table thead th {
+	font-size: 15px;
+	font-weight: bold;
+	width: 12.5%;
+	text-align: center;
+}
+
+td {
+	text-align: center;
+}
+</style>
 </head>
 
 <body>
+
 	<div
 		class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
 		<!-- Sidebar -->
@@ -338,24 +351,31 @@
 			<!-- Navbar -->
 			<header>
 				<div class="container-fluid">
-					<div class="border-bottom pt-6">
+					<div class="border-bottom pt-6" id="hing">
 						<div class="row align-items-center">
 							<div class="col-sm col-12">
 								<!-- Nav -->
-								<ul class="nav nav-tabs">
-									<li class="nav-item dropdown">
-									<a href="#" class="dropdown-toggle nav-link active" id="dropdownMenuButton1" data-toggle="dropdown">ALL 
-									<span class="caret"></span>
+								<ul class="nav nav-tabs" id="memberTab" role="tablist">
+									<li class="nav-item dropdown" role="presentation"><a
+										href="#" class="dropdown-toggle nav-link active"
+										id="dropdownMenuButton1" data-toggle="dropdown">ALL <span
+											class="caret"></span>
 									</a>
-										<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="min-width:0px;">
-											<li><a class="dropdown-item" href="#" >잔여 수량별</a></li>
-											<li ><a class="dropdown-item" href="#" >진도율별</a></li>
-											<li><a class="dropdown-item" href="#" >결석율별</a></li>
-										</ul>
-										</li>
-									<li class="nav-item"><a href="#" class="nav-link">만료예정</a>
+										<ul class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton1" style="min-width: 0px;">
+											<li><a class="dropdown-item" data-bs-toggle="tab" role="button"
+													type="button">잔여 수량별</a></li>
+											<li><a class="dropdown-item" data-bs-toggle="tab" role="button"
+													type="button">진도율별</a></li>
+											<li><a class="dropdown-item" data-bs-toggle="tab" role="button"
+													type="button">결석율별</a></li>
+										</ul></li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" data-bs-toggle="tab" type="button">만료예정</button>
 									</li>
-									<li class="nav-item"><a href="#" class="nav-link">개시 전</a>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" data-bs-toggle="tab" type="button">개시
+											전</button>
 									</li>
 								</ul>
 							</div>
@@ -578,272 +598,40 @@
 				</div>
 				<!-- Container -->
 				<div class="container-fluid">
-					<div class="row g-6 mb-6">
-						<div class="col-xl-8">
-							<div class="card">
-								<div class="card-header d-flex align-items-center">
-									<h5 class="mb-0">Orders</h5>
-									<button class="btn btn-sm btn-neutral ms-auto">Export</button>
-								</div>
-								<div class="px-4">
-									<div id="chart-line" data-height="300"></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4">
-							<div class="card h-full">
-								<div class="card-body">
-									<div class="card-title d-flex align-items-center">
-										<h5 class="mb-0">Top Performance</h5>
-										<div class="ms-auto text-end">
-											<a href="#" class="text-sm font-semibold">See all</a>
-										</div>
-									</div>
-									<div class="list-group gap-4">
-										<div
-											class="list-group-item d-flex align-items-center border rounded">
-											<div class="me-4">
-												<div class="avatar rounded-circle">
-													<img alt="..." src="/img/people/img-1.jpg">
-												</div>
-											</div>
-											<div class="flex-fill">
-												<!-- Title -->
-												<a href="#" class="d-block h6 font-semibold mb-1">Norman
-													Mohrbacher</a>
-												<!-- Subtitle -->
-												<span class="d-block text-sm text-muted">UI Designer</span>
-											</div>
-											<div class="ms-auto text-end">
-												<div class="dropdown">
-													<a class="text-muted" href="#" role="button"
-														data-bs-toggle="dropdown" aria-haspopup="true"
-														aria-expanded="false"> <i
-														class="bi bi-three-dots-vertical"></i>
-													</a>
-													<div class="dropdown-menu">
-														<a href="#!" class="dropdown-item"> Action </a> <a
-															href="#!" class="dropdown-item"> Another action </a> <a
-															href="#!" class="dropdown-item"> Something else here
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div
-											class="list-group-item d-flex align-items-center border rounded">
-											<div class="me-4">
-												<div class="avatar rounded-circle">
-													<img alt="..." src="/img/people/img-2.jpg">
-												</div>
-											</div>
-											<div class="flex-fill">
-												<!-- Title -->
-												<a href="#" class="d-block h6 font-semibold mb-1">Leeann
-													Monnet</a>
-												<!-- Subtitle -->
-												<span class="d-block text-sm text-muted">Web
-													Developer</span>
-											</div>
-											<div class="ms-auto text-end">
-												<div class="dropdown">
-													<a class="text-muted" href="#" role="button"
-														data-bs-toggle="dropdown" aria-haspopup="true"
-														aria-expanded="false"> <i
-														class="bi bi-three-dots-vertical"></i>
-													</a>
-													<div class="dropdown-menu">
-														<a href="#!" class="dropdown-item"> Action </a> <a
-															href="#!" class="dropdown-item"> Another action </a> <a
-															href="#!" class="dropdown-item"> Something else here
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div
-											class="list-group-item d-flex align-items-center border rounded">
-											<div class="me-4">
-												<div class="avatar rounded-circle">
-													<img alt="..." src="/img/people/img-3.jpg">
-												</div>
-											</div>
-											<div class="flex-fill">
-												<!-- Title -->
-												<a href="#" class="d-block h6 font-semibold mb-1">Kathe
-													Rahimi</a>
-												<!-- Subtitle -->
-												<span class="d-block text-sm text-muted">Marketing
-													Team</span>
-											</div>
-											<div class="ms-auto text-end">
-												<div class="dropdown">
-													<a class="text-muted" href="#" role="button"
-														data-bs-toggle="dropdown" aria-haspopup="true"
-														aria-expanded="false"> <i
-														class="bi bi-three-dots-vertical"></i>
-													</a>
-													<div class="dropdown-menu">
-														<a href="#!" class="dropdown-item"> Action </a> <a
-															href="#!" class="dropdown-item"> Another action </a> <a
-															href="#!" class="dropdown-item"> Something else here
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Card stats -->
-					<div class="row g-6 mb-6">
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
-								<div class="card-body">
-									<div class="row">
-										<div class="col">
-											<span
-												class="h6 font-semibold text-muted text-sm d-block mb-2">Budget</span>
-											<span class="h3 font-bold mb-0">$750.90</span>
-										</div>
-										<div class="col-auto">
-											<div
-												class="icon icon-shape bg-tertiary text-white text-lg rounded-circle">
-												<i class="bi bi-credit-card"></i>
-											</div>
-										</div>
-									</div>
-									<div class="mt-2 mb-0 text-sm">
-										<span
-											class="badge badge-pill bg-soft-success text-success me-2">
-											<i class="bi bi-arrow-up me-1"></i>30%
-										</span> <span class="text-nowrap text-xs text-muted">Since
-											last month</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
-								<div class="card-body">
-									<div class="row">
-										<div class="col">
-											<span
-												class="h6 font-semibold text-muted text-sm d-block mb-2">New
-												projects</span> <span class="h3 font-bold mb-0">215</span>
-										</div>
-										<div class="col-auto">
-											<div
-												class="icon icon-shape bg-primary text-white text-lg rounded-circle">
-												<i class="bi bi-people"></i>
-											</div>
-										</div>
-									</div>
-									<div class="mt-2 mb-0 text-sm">
-										<span
-											class="badge badge-pill bg-soft-success text-success me-2">
-											<i class="bi bi-arrow-up me-1"></i>23%
-										</span> <span class="text-nowrap text-xs text-muted">Since
-											last week</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
-								<div class="card-body">
-									<div class="row">
-										<div class="col">
-											<span
-												class="h6 font-semibold text-muted text-sm d-block mb-2">Total
-												hours</span> <span class="h3 font-bold mb-0">1.400</span>
-										</div>
-										<div class="col-auto">
-											<div
-												class="icon icon-shape bg-info text-white text-lg rounded-circle">
-												<i class="bi bi-clock-history"></i>
-											</div>
-										</div>
-									</div>
-									<div class="mt-2 mb-0 text-sm">
-										<span class="badge badge-pill bg-soft-danger text-danger me-2">
-											<i class="bi bi-arrow-down me-1"></i>-10%
-										</span> <span class="text-nowrap text-xs text-muted">Since
-											last month</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
-								<div class="card-body">
-									<div class="row">
-										<div class="col">
-											<span
-												class="h6 font-semibold text-muted text-sm d-block mb-2">Work
-												load</span> <span class="h3 font-bold mb-0">95%</span>
-										</div>
-										<div class="col-auto">
-											<div
-												class="icon icon-shape bg-warning text-white text-lg rounded-circle">
-												<i class="bi bi-minecart-loaded"></i>
-											</div>
-										</div>
-									</div>
-									<div class="mt-2 mb-0 text-sm">
-										<span
-											class="badge badge-pill bg-soft-success text-success me-2">
-											<i class="bi bi-arrow-up me-1"></i>15%
-										</span> <span class="text-nowrap text-xs text-muted">Since
-											yestearday</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 					<div class="card">
 						<div class="card-header border-bottom">
-							<h5 class="mb-0">Latest projects</h5>
+							<h6 class="mb-0">
+								페이지당 <select class="form-select form-select-sm"
+									style="width: auto; height: auto; display: inline;">
+									<option value="10">10</option>
+									<option value="20">20</option>
+									<option value="30">30</option>
+								</select> 개 표시
+							</h6>
+							<h6 class="mb-0" style="margin-top: 7px;">총 00명</h6>
 						</div>
 						<div class="table-responsive">
-							<table class="table table-hover table-nowrap">
-								<thead class="table-light">
+							<table class="table table-hover table-nowrap table-sm">
+								<thead>
 									<tr>
-										<th scope="col">Name</th>
-										<th scope="col">Due Date</th>
-										<th scope="col">Status</th>
-										<th scope="col">Team</th>
-										<th scope="col">Completion</th>
-										<th></th>
+										<th scope="col">레슨사인지</th>
+										<th scope="col">구분</th>
+										<th scope="col">이름</th>
+										<th scope="col">회원번호</th>
+										<th scope="col">성별</th>
+										<th scope="col">레슨권정보</th>
+										<th scope="col">최근방문일</th>
+										<th scope="col">상담매니저</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td><img alt="..." src="/img/social/airbnb.svg"
-											class="avatar avatar-sm rounded-circle me-2"> <a
-											class="text-heading font-semibold" href="#"> Website
-												Redesign </a></td>
-										<td>23-01-2022</td>
-										<td><span class="badge badge-lg badge-dot"> <i
-												class="bg-warning"></i>In progress
-										</span></td>
-										<td>
-											<div class="avatar-group">
-												<a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-1.jpg">
-												</a> <a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-3.jpg">
-												</a> <a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-4.jpg">
-												</a>
-											</div>
-										</td>
-										<td>
+										<td><button class="btn btn-sm btn-outline-primary">이동하기</button></td>
+										<td>입문</td>
+										<td>아무개</td>
+										<td>0124</td>
+										<td>남성</td>
+										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
 											<div class="d-flex align-items-center">
 												<span class="me-2">38%</span>
 												<div>
@@ -855,180 +643,92 @@
 												</div>
 											</div>
 										</td>
-										<td class="text-end"><a href="#"
-											class="btn btn-sm btn-neutral">View</a>
-											<button type="button"
-												class="btn btn-sm btn-square btn-neutral text-danger-hover">
-												<i class="bi bi-trash"></i>
-											</button></td>
+										<td>2022-02-17</td>
+										<td>가나다</td>
 									</tr>
 									<tr>
-										<td><img alt="..." src="/img/social/amazon.svg"
-											class="avatar avatar-sm rounded-circle me-2"> <a
-											class="text-heading font-semibold" href="#"> E-commerce
-												App </a></td>
-										<td>23-01-2022</td>
-										<td><span class="badge badge-lg badge-dot"> <i
-												class="bg-success"></i>Done
-										</span></td>
-										<td>
-											<div class="avatar-group">
-												<a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-1.jpg">
-												</a> <a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-3.jpg">
-												</a> <a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-4.jpg">
-												</a>
-											</div>
-										</td>
-										<td>
+										<td><button class="btn btn-sm btn-outline-primary">이동하기</button></td>
+										<td>입문</td>
+										<td>아무개</td>
+										<td>0124</td>
+										<td>남성</td>
+										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
 											<div class="d-flex align-items-center">
-												<span class="me-2">83%</span>
+												<span class="me-2">38%</span>
 												<div>
 													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-success" role="progressbar"
-															aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"
-															style="width: 83%;"></div>
+														<div class="progress-bar bg-warning" role="progressbar"
+															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
+															style="width: 38%;"></div>
 													</div>
 												</div>
 											</div>
 										</td>
-										<td class="text-end"><a href="#"
-											class="btn btn-sm btn-neutral">View</a>
-											<button type="button"
-												class="btn btn-sm btn-square btn-neutral text-danger-hover">
-												<i class="bi bi-trash"></i>
-											</button></td>
+										<td>2022-02-17</td>
+										<td>일이삼</td>
 									</tr>
 									<tr>
-										<td><img alt="..." src="/img/social/bootstrap.svg"
-											class="avatar avatar-sm rounded-circle me-2"> <a
-											class="text-heading font-semibold" href="#"> Learning
-												Platform </a></td>
-										<td>23-01-2022</td>
-										<td><span class="badge badge-lg badge-dot"> <i
-												class="bg-danger"></i>Project at risk
-										</span></td>
-										<td>
-											<div class="avatar-group">
-												<a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-1.jpg">
-												</a> <a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-3.jpg">
-												</a> <a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-4.jpg">
-												</a>
-											</div>
-										</td>
-										<td>
+										<td><button class="btn btn-sm btn-outline-primary">이동하기</button></td>
+										<td>입문</td>
+										<td>아무개</td>
+										<td>0124</td>
+										<td>남성</td>
+										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
 											<div class="d-flex align-items-center">
-												<span class="me-2">4%</span>
+												<span class="me-2">38%</span>
 												<div>
 													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-danger" role="progressbar"
-															aria-valuenow="4" aria-valuemin="0" aria-valuemax="100"
-															style="width: 4%;"></div>
+														<div class="progress-bar bg-warning" role="progressbar"
+															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
+															style="width: 38%;"></div>
 													</div>
 												</div>
 											</div>
 										</td>
-										<td class="text-end"><a href="#"
-											class="btn btn-sm btn-neutral">View</a>
-											<button type="button"
-												class="btn btn-sm btn-square btn-neutral text-danger-hover">
-												<i class="bi bi-trash"></i>
-											</button></td>
+										<td>2022-01-30</td>
+										<td>일이삼</td>
 									</tr>
 									<tr>
-										<td><img alt="..." src="/img/social/dribbble.svg"
-											class="avatar avatar-sm rounded-circle me-2"> <a
-											class="text-heading font-semibold" href="#"> Design
-												Portfolio </a></td>
-										<td>23-01-2022</td>
-										<td><span class="badge badge-lg badge-dot"> <i
-												class="bg-warning"></i>In progress
-										</span></td>
-										<td>
-											<div class="avatar-group">
-												<a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-1.jpg">
-												</a> <a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-3.jpg">
-												</a> <a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-4.jpg">
-												</a>
-											</div>
-										</td>
-										<td>
+										<td><button class="btn btn-sm btn-outline-primary">이동하기</button></td>
+										<td>입문</td>
+										<td>아무개</td>
+										<td>0124</td>
+										<td>남성</td>
+										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
 											<div class="d-flex align-items-center">
-												<span class="me-2">10%</span>
+												<span class="me-2">38%</span>
 												<div>
 													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-primary" role="progressbar"
-															aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
-															style="width: 10%;"></div>
+														<div class="progress-bar bg-warning" role="progressbar"
+															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
+															style="width: 38%;"></div>
 													</div>
 												</div>
 											</div>
 										</td>
-										<td class="text-end"><a href="#"
-											class="btn btn-sm btn-neutral">View</a>
-											<button type="button"
-												class="btn btn-sm btn-square btn-neutral text-danger-hover">
-												<i class="bi bi-trash"></i>
-											</button></td>
+										<td>2022-02-17</td>
+										<td>가나다</td>
 									</tr>
 									<tr>
-										<td><img alt="..." src="/img/social/spotify.svg"
-											class="avatar avatar-sm rounded-circle me-2"> <a
-											class="text-heading font-semibold" href="#"> Our
-												team&#39;s playlist </a></td>
-										<td>23-01-2022</td>
-										<td><span class="badge badge-lg badge-dot"> <i
-												class="bg-warning"></i>In progress
-										</span></td>
-										<td>
-											<div class="avatar-group">
-												<a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-1.jpg">
-												</a> <a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-3.jpg">
-												</a> <a href="#"
-													class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
-													<img alt="..." src="/img/people/img-4.jpg">
-												</a>
-											</div>
-										</td>
-										<td>
+										<td><button class="btn btn-sm btn-outline-primary">이동하기</button></td>
+										<td>입문</td>
+										<td>아무개</td>
+										<td>0124</td>
+										<td>남성</td>
+										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
 											<div class="d-flex align-items-center">
-												<span class="me-2">83%</span>
+												<span class="me-2">38%</span>
 												<div>
 													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-success" role="progressbar"
-															aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"
-															style="width: 83%;"></div>
+														<div class="progress-bar bg-warning" role="progressbar"
+															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
+															style="width: 38%;"></div>
 													</div>
 												</div>
 											</div>
 										</td>
-										<td class="text-end"><a href="#"
-											class="btn btn-sm btn-neutral">View</a>
-											<button type="button"
-												class="btn btn-sm btn-square btn-neutral text-danger-hover">
-												<i class="bi bi-trash"></i>
-											</button></td>
+										<td>2022-02-17</td>
+										<td>가나다</td>
 									</tr>
 								</tbody>
 							</table>
