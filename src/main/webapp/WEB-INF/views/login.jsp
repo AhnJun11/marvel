@@ -26,7 +26,7 @@
                       <label class="form-label" for="password">PW</label>
                     </div>
                     <div class="mb-2">
-                      <a href="./basic-recover.html" class="text-sm text-muted text-primary-hover text-underline">Forgot password?</a>
+                      <a href="/views/loginPage/find" class="text-sm text-muted text-primary-hover text-underline">Forgot password?</a>
                     </div>
                   </div>
                   <input type="password" class="form-control" id="password" placeholder="Password" autocomplete="current-password">
@@ -45,20 +45,12 @@
                   </a>
                 </div>
               </form>
-
-
-              <div class="my-6">
-                <small>Don't have an account?</small>
-                <a href="/pages/authentication/basic-register.html" class="text-warning text-sm font-semibold">Sign up</a>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Scripts -->
-  <script src="/js/main.js"></script>
 </body>
 
 </html>
