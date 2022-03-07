@@ -18,8 +18,7 @@
 				class="navbar navbar-light position-lg-sticky top-lg-0 d-none d-lg-block overlap-10 flex-none bg-white border-bottom px-0 py-3"
 				id="topbar">
 				<div class="container-fluid">
-					<div class="hstack gap-2">
-					</div>
+					<div class="hstack gap-2"></div>
 					<!-- Form -->
 					<form class="form-inline ms-auto me-4 d-none d-md-flex">
 						<div class="input-group input-group-inline shadow-none">
@@ -182,26 +181,25 @@
 							<div class="col-sm col-12">
 								<!-- Nav -->
 								<ul class="nav nav-tabs" id="memberTab" role="tablist">
-									<li class="nav-item dropdown" role="presentation"><a
-										href="#" class="dropdown-toggle nav-link active"
-										id="dropdownMenuButton1" data-toggle="dropdown">ALL <span
-											class="caret"></span>
-									</a>
-										<ul class="dropdown-menu"
-											aria-labelledby="dropdownMenuButton1" style="min-width: 0px;">
-											<li><a class="dropdown-item" data-bs-toggle="tab"
-												role="button" type="button">잔여 수량별</a></li>
-											<li><a class="dropdown-item" data-bs-toggle="tab"
-												role="button" type="button">진도율별</a></li>
-											<li><a class="dropdown-item" data-bs-toggle="tab"
-												role="button" type="button">결석율별</a></li>
-										</ul></li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" data-bs-toggle="tab" type="button">만료예정</button>
+										<button class="nav-link active" data-bs-toggle="tab"
+											type="button">공지사항</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" data-bs-toggle="tab" type="button">개시
-											전</button>
+										<button class="nav-link" data-bs-toggle="tab" type="button">히스토리</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" data-bs-toggle="tab" type="button">통계</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" data-bs-toggle="tab" type="button">메모장</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" data-bs-toggle="tab" type="button">프로필
+											설정</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" data-bs-toggle="tab" type="button">캘린더</button>
 									</li>
 								</ul>
 							</div>
@@ -425,136 +423,52 @@
 				<!-- Container -->
 				<div class="container-fluid">
 					<div class="card">
-						<div class="card-header border-bottom">
-							<h6 class="mb-0">
-								페이지당 <select class="form-select form-select-sm"
-									style="width: auto; height: auto; display: inline;">
-									<option value="10">10</option>
-									<option value="20">20</option>
-									<option value="30">30</option>
-								</select> 개 표시
-							</h6>
-							<h6 class="mb-0" style="margin-top: 7px;">총 00명</h6>
-						</div>
 						<div class="table-responsive">
 							<table class="table table-hover table-nowrap table-sm">
 								<thead>
 									<tr>
-										<th scope="col">레슨사인지</th>
-										<th scope="col">구분</th>
-										<th scope="col">이름</th>
-										<th scope="col">회원번호</th>
-										<th scope="col">성별</th>
-										<th scope="col">레슨권정보</th>
-										<th scope="col">최근방문일</th>
-										<th scope="col">상담매니저</th>
+										<th scope="col">번호</th>
+										<th scope="col">제목</th>
+										<th scope="col">공개대상</th>
+										<th scope="col">등록자</th>
+										<th scope="col">등록일시</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td><button class="btn btn-sm btn-outline-primary">이동하기</button></td>
-										<td>입문</td>
-										<td>아무개</td>
-										<td>0124</td>
-										<td>남성</td>
-										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
-											<div class="d-flex align-items-center">
-												<span class="me-2">38%</span>
-												<div>
-													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-warning" role="progressbar"
-															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
-															style="width: 38%;"></div>
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>2022-02-17</td>
-										<td>가나다</td>
+										<td>1</td>
+										<td>레슨사인지 관리 방법 변경 공지</td>
+										<td>레슨프로</td>
+										<td>관리자</td>
+										<td>2022.02.28 (월) 오후 20:13</td>
 									</tr>
 									<tr>
-										<td><button class="btn btn-sm btn-outline-primary">이동하기</button></td>
-										<td>입문</td>
-										<td>아무개</td>
-										<td>0124</td>
-										<td>남성</td>
-										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
-											<div class="d-flex align-items-center">
-												<span class="me-2">38%</span>
-												<div>
-													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-warning" role="progressbar"
-															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
-															style="width: 38%;"></div>
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>2022-02-17</td>
-										<td>일이삼</td>
+										<td>2</td>
+										<td>2022 3월 공휴일 매장 운영 공지</td>
+										<td>레슨프로</td>
+										<td>관리자</td>
+										<td>2022.02.28 (월) 오후 20:13</td>
 									</tr>
 									<tr>
-										<td><button class="btn btn-sm btn-outline-primary">이동하기</button></td>
-										<td>입문</td>
-										<td>아무개</td>
-										<td>0124</td>
-										<td>남성</td>
-										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
-											<div class="d-flex align-items-center">
-												<span class="me-2">38%</span>
-												<div>
-													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-warning" role="progressbar"
-															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
-															style="width: 38%;"></div>
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>2022-01-30</td>
-										<td>일이삼</td>
+										<td>3</td>
+										<td>test입니다.</td>
+										<td>레슨프로</td>
+										<td>관리자</td>
+										<td>2022.02.28 (월) 오후 20:13</td>
 									</tr>
 									<tr>
-										<td><button class="btn btn-sm btn-outline-primary">이동하기</button></td>
-										<td>입문</td>
-										<td>아무개</td>
-										<td>0124</td>
-										<td>남성</td>
-										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
-											<div class="d-flex align-items-center">
-												<span class="me-2">38%</span>
-												<div>
-													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-warning" role="progressbar"
-															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
-															style="width: 38%;"></div>
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>2022-02-17</td>
-										<td>가나다</td>
+										<td>4</td>
+										<td>test입니다.</td>
+										<td>레슨프로</td>
+										<td>관리자</td>
+										<td>2022.02.28 (월) 오후 20:13</td>
 									</tr>
 									<tr>
-										<td><button class="btn btn-sm btn-outline-primary">이동하기</button></td>
-										<td>입문</td>
-										<td>아무개</td>
-										<td>0124</td>
-										<td>남성</td>
-										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
-											<div class="d-flex align-items-center">
-												<span class="me-2">38%</span>
-												<div>
-													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-warning" role="progressbar"
-															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
-															style="width: 38%;"></div>
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>2022-02-17</td>
-										<td>가나다</td>
+										<td>5</td>
+										<td>test입니다.</td>
+										<td>레슨프로</td>
+										<td>관리자</td>
+										<td>2022.02.28 (월) 오후 20:13</td>
 									</tr>
 								</tbody>
 							</table>
@@ -564,7 +478,5 @@
 			</main>
 		</div>
 	</div>
-
 </body>
-
 </html>

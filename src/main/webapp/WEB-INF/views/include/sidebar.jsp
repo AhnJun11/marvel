@@ -47,10 +47,10 @@
 			<div class="collapse navbar-collapse" id="sidebarCollapse">
 				<!-- Navigation -->
 				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link"
-						href="/views/index"role="button"
-						aria-expanded="false" aria-controls="sidebar-projects"> <i
-							class="bi bi-briefcase"></i> Home
+					<li class="nav-item"><a class="nav-link" href="/views/index"
+						role="button" aria-expanded="false"
+						aria-controls="sidebar-projects"> <i class="bi bi-briefcase"></i>
+							Home
 					</a></li>
 					<li class="nav-item"><a class="nav-link" href="#sidebar-tasks"
 						data-bs-toggle="collapse" role="button" aria-expanded="false"
@@ -105,27 +105,10 @@
 										Manage Apps </a></li>
 							</ul>
 						</div></li>
-					<li class="nav-item"><a class="nav-link" href="#sidebar-user"
-						data-bs-toggle="collapse" role="button" aria-expanded="false"
+					<li class="nav-item"><a class="nav-link"
+						href="/views/settings" role="button"
 						aria-controls="sidebar-user"> <i class="bi bi-people"></i> 설정
-					</a>
-						<div class="collapse" id="sidebar-user">
-							<ul class="nav nav-sm flex-column">
-								<li class="nav-item"><a href="/views/settings/announcement"
-									class="nav-link"> 공지사항 </a></li>
-								<li class="nav-item"><a href="/pages/user/profile.html"
-									class="nav-link"> 히스토리 </a></li>
-								<li class="nav-item"><a href="/pages/user/profile.html"
-									class="nav-link"> 통계 </a></li>
-								<li class="nav-item"><a href="/pages/user/profile.html"
-									class="nav-link"> 메모장 </a></li>
-								<li class="nav-item"><a href="/pages/user/profile.html"
-									class="nav-link"> 프로필 설정 </a></li>
-								<li class="nav-item"><a href="/pages/user/profile.html"
-									class="nav-link"> 캘린더 </a></li>
-
-							</ul>
-						</div></li>
+					</a></li>
 				</ul>
 				<!-- Divider -->
 				<hr class="navbar-divider my-4 opacity-70">

@@ -459,14 +459,12 @@
 										<td>0124</td>
 										<td>남성</td>
 										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
-											<div class="d-flex align-items-center">
-												<span class="me-2">38%</span>
-												<div>
-													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-warning" role="progressbar"
-															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
-															style="width: 38%;"></div>
-													</div>
+											<div class="d-flex align-items-center justify-content-center">
+												<span class="me-2 ">38%</span>
+												<div class="progress" style="width: 100px;">
+													<div class="progress-bar bg-warning" role="progressbar"
+														aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
+														style="width: 38%;"></div>
 												</div>
 											</div>
 										</td>
@@ -480,14 +478,12 @@
 										<td>0124</td>
 										<td>남성</td>
 										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
-											<div class="d-flex align-items-center">
-												<span class="me-2">38%</span>
-												<div>
-													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-warning" role="progressbar"
-															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
-															style="width: 38%;"></div>
-													</div>
+											<div class="d-flex align-items-center justify-content-center">
+												<span class="me-2 ">38%</span>
+												<div class="progress" style="width: 100px;">
+													<div class="progress-bar bg-warning" role="progressbar"
+														aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
+														style="width: 38%;"></div>
 												</div>
 											</div>
 										</td>
@@ -501,14 +497,12 @@
 										<td>0124</td>
 										<td>남성</td>
 										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
-											<div class="d-flex align-items-center">
-												<span class="me-2">38%</span>
-												<div>
-													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-warning" role="progressbar"
-															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
-															style="width: 38%;"></div>
-													</div>
+											<div class="d-flex align-items-center justify-content-center">
+												<span class="me-2 ">38%</span>
+												<div class="progress" style="width: 100px;">
+													<div class="progress-bar bg-warning" role="progressbar"
+														aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
+														style="width: 38%;"></div>
 												</div>
 											</div>
 										</td>
@@ -522,14 +516,12 @@
 										<td>0124</td>
 										<td>남성</td>
 										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
-											<div class="d-flex align-items-center">
-												<span class="me-2">38%</span>
-												<div>
-													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-warning" role="progressbar"
-															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
-															style="width: 38%;"></div>
-													</div>
+											<div class="d-flex align-items-center justify-content-center">
+												<span class="me-2 ">38%</span>
+												<div class="progress" style="width: 100px;">
+													<div class="progress-bar bg-warning" role="progressbar"
+														aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
+														style="width: 38%;"></div>
 												</div>
 											</div>
 										</td>
@@ -543,14 +535,12 @@
 										<td>0124</td>
 										<td>남성</td>
 										<td>기간 :2022.01.24 ~ 2022.04.23<br> 횟수 :30회 중 잔여 24회
-											<div class="d-flex align-items-center">
-												<span class="me-2">38%</span>
-												<div>
-													<div class="progress" style="width: 100px;">
-														<div class="progress-bar bg-warning" role="progressbar"
-															aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
-															style="width: 38%;"></div>
-													</div>
+											<div class="d-flex align-items-center justify-content-center">
+												<span class="me-2 ">38%</span>
+												<div class="progress" style="width: 100px;">
+													<div class="progress-bar bg-warning" role="progressbar"
+														aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"
+														style="width: 38%;"></div>
 												</div>
 											</div>
 										</td>

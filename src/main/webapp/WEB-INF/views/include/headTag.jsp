@@ -22,7 +22,6 @@
 .table thead th {
 	font-size: 15px;
 	font-weight: bold;
-	width: 12.5%;
 	text-align: center;
 }
 
